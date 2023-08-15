@@ -5,16 +5,23 @@ const closeButton = mobileMenu.querySelector('.close-button')
 const gridItems = document.querySelectorAll('.item')
 const popup = document.getElementById('popup')
 const popupImage = document.getElementById('popupImage')
+const expandBtn = document.getElementById('expand-btn')
+const gradient = document.getElementById('gradient')
 
-document.addEventListener('DOMContentLoaded', function () {
-	mobileMenuButton.addEventListener('click', function () {
+
+document.addEventListener('DOMContentLoaded',  () => {
+	mobileMenuButton.addEventListener('click',  () => {
 		mobileMenu.classList.add('translate-x-0')
 	})
 
-	closeButton.addEventListener('click', function () {
+	closeButton.addEventListener('click',  () => {
 		mobileMenu.classList.add('-translate-x-full')
 		mobileMenu.classList.remove('translate-x-0')
 	})
+
+   expandBtn.addEventListener('click', () => {
+      gradient.style.display = 'none'
+   })
 })
 
 
@@ -32,4 +39,6 @@ popup.addEventListener("click", event => {
        popup.style.display = "none";
    }
 });
+
+
 
