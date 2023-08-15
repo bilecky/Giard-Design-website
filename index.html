@@ -9,21 +9,23 @@
    <title>Glard Design</title>
    <script src="https://cdn.tailwindcss.com"></script>
    <script>
+
       tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
+         theme: {
+            extend: {
+               colors: {
+                  clifford: '#da373d',
+               }
             }
-          }
-        }
+         }
       }
-    </script>
+   </script>
+
    <link rel="stylesheet" href="main.css">
 
 </head>
 
-<body class="">
+<body>
 
 
    <header>
@@ -91,7 +93,7 @@
             </ul>
          </div>
       </div>
-      <section class="md:flex mx-auto">
+      <section class="heeader_hero-section md:flex mx-auto">
          <div class="md:w-1/2 bg-yellow-600 flex flex-col justify-center items-start p-8 relative overflow-hidden">
             <img src="images/hero-photo.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
@@ -127,7 +129,7 @@
    </header>
 
    <main>
-      <section class="offer max-w-7xl pt-28 pb-40   mx-auto px-8">
+      <section class="offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
          <div class="lg:w-4/6 lg:px-24 pb-20">
             <h2 class="text-sm  mb-4">Oferta</h2>
             <h3 class="text-xl font-semibold mb-8">Działamy kompleksowo</h3>
@@ -216,7 +218,8 @@
                <h3 class="text-5xl font-semibold mb-8">Działamy kompleksowo</h3>
                <p class="">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
                   ogrody przydomowe oraz
-                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+                  etapie
                   posłużymy radą i wieloletnim doświadczeniem.</p>
 
 
@@ -229,6 +232,38 @@
                      </path>
                   </svg>
                </div>
+            </div>
+         </div>
+      </section>
+      <section class="projects max-w-7xl pt-28 pb-40  ">
+         <div class="lg:w-4/6 lg:px-24 pb-20">
+            <h2 class="text-sm  mb-4">Realizacje</h2>
+            <h3 class="text-xl font-semibold mb-8">Nasze projekty</h3>
+
+         </div>
+         <div class="masonry relative gap-8">
+            <div class="item cursor-pointer"><img src="images/masonry-photo-1.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-2.png" alt="realized project image"></div>
+            <div class="item cursor-pointer "><img src="images/masonry-photo-3.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-4.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-5.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-6.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-7.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-8.png" alt="realized project image"></div>
+            <div class="item cursor-pointer"><img src="images/masonry-photo-9.png" alt="realized project image"></div>
+
+            <div class="gradient absolute bottom-0 left-0 w-full h-3/4 flex flex-col items-center justify-end">
+               <button class="mb-8 py-2 px-4 border border-2 text-white rounded-full">Rozwiń <svg
+                     class="w-4 h-4 inline transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 10l7-7m0 0l7 7m-7-7v18">
+                     </path>
+                  </svg> </button>
+            </div>
+
+            <div class="popup" id="popup">
+               <img src="" alt="Popup Image" id="popupImage">
             </div>
       </section>
 
