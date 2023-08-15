@@ -26,3 +26,7 @@
  body { 
   background-color: rgba(245, 240, 236, 1);
  }
+
+ .rounded-card { 
+  border-radius: 20px
+ }
