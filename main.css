@@ -22,3 +22,7 @@
    transform-origin: bottom left;
  }
 
+
+ body { 
+  background-color: rgba(245, 240, 236, 1);
+ }
