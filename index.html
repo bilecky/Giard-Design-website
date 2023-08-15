@@ -8,6 +8,17 @@
    , initial-scale=1.0">
    <title>Glard Design</title>
    <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
    <link rel="stylesheet" href="main.css">
 
 </head>
@@ -96,9 +107,9 @@
                </div>
 
                <div class="flex flex-col lg:flex-row gap-4 mt-16">
-                  <a href="#" class="bg-blue-500 rounded-full px-4 py-2 text-center md:w-2/3 lg:w-auto">Skontaktuj
+                  <a href="#" class="bg-blue-500 rounded-full px-5  py-3 text-center md:w-2/3 lg:w-auto">Skontaktuj
                      się z nami</a>
-                  <div class="border-2 rounded-full px-4 py-2 flex items-center justify-center md:w-2/3 lg:w-auto">
+                  <div class="border-2 rounded-full px-5  py-3 flex items-center justify-center md:w-2/3 lg:w-auto">
                      <a href="#" class="btn-secondary mr-1 text-center">Zobacz nasze realizacje</a>
                      <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -190,6 +201,35 @@
          </div>
 
 
+      </section>
+      <section class="about-section  md:flex mx-auto h-[700px]">
+
+         <div class="hidden md:block md:w-1/2 bg-hero-image bg-cover bg-center">
+            <img src="images/about-img.png" alt="giard design hero image" class="h-full w-full object-cover">
+         </div>
+         <div class="md:w-1/2 bg-yellow-600 flex flex-col justify-center items-start p-8 relative overflow-hidden">
+            <img src="images/about-img.png" alt="giard design hero image"
+               class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
+
+            <div class="lg:p-20">
+               <h2 class="text-sm  mb-4">O firmie</h2>
+               <h3 class="text-5xl font-semibold mb-8">Działamy kompleksowo</h3>
+               <p class="">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
+                  ogrody przydomowe oraz
+                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+                  posłużymy radą i wieloletnim doświadczeniem.</p>
+
+
+               <div class="border-2 rounded-full px-5  py-3 inline-flex items-center justify-center mt-16">
+                  <a href="#" class="btn-secondary mr-1 text-center">Poznaj nas bliżej</a>
+                  <svg class="w-4 h-4 inline transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 10l7-7m0 0l7 7m-7-7v18">
+                     </path>
+                  </svg>
+               </div>
+            </div>
       </section>
 
    </main>
