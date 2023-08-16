@@ -24,6 +24,8 @@
 
 body {
 	background-color: rgba(245, 240, 236, 1);
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 .rounded-card {
@@ -77,3 +79,20 @@ body {
 .gradient {
 	background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
 }
+
+@keyframes slide-up {
+	0% {
+		 transform: translateY(20px);
+		 opacity: 0;
+	}
+	100% {
+		 transform: translateY(0);
+		 opacity: 1;
+	}
+}
+
+#searchContainer {
+	animation: slide-up 0.3s ease-in-out;
+}
+
+

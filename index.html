@@ -7,6 +7,11 @@
    
    , initial-scale=1.0">
    <title>Glard Design</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
    <script src="https://cdn.tailwindcss.com"></script>
    <script>
 
@@ -14,7 +19,11 @@
          theme: {
             extend: {
                colors: {
-                  clifford: '#da373d',
+                  themeBeigeBgc: 'rgba(27, 91, 49, 1)',
+                  themeGrey: 'rgba(245, 240, 236, 1)',
+                  themeGreenBgc: 'rgba(27, 91, 49, 1)',
+                  themeBlackFont: 'rgba(17, 17, 17, 1) '
+
                }
             }
          }
@@ -29,8 +38,8 @@
 
 
    <header>
-      <nav class=" p-4 flex items-center justify-between">
-         <h1 class="text-white text-2xl">Nazwa Firmy</h1>
+      <nav class=" p-4 flex items-center justify-between px-8 max-w-7xl mx-auto">
+         <h1 class="text-white text-2xl"><img src="icons/logo-icon.svg" alt=""></h1>
          <div class="lg:hidden">
             <button id="mobile-menu-button" class="text-white hover:text-gray-300 focus:outline-none">
                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -42,7 +51,7 @@
          </div>
          <ul class="hidden lg:flex space-x-4">
             <li class="relative group">
-               <a href="#" class="text-white hover:text-gray-300 underline-effect flex items-center">
+               <a href="#" class=" hover:text-gray-900 underline-effect flex items-center">
                   Oferta
                   <svg class="inline h-4 w-4 ml-1 transition-transform duration-300 transform group-hover:rotate-180"
                      fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -51,11 +60,11 @@
                </a>
                <ul
                   class="absolute left-0  mt-2 bg-white border border-gray-300 w-40 py-2 transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-top">
-                  <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 1</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 1</a>
                   </li>
-                  <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 2</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 2</a>
                   </li>
-                  <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 3</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 3</a>
                   </li>
                </ul>
             </li>
@@ -63,15 +72,16 @@
             <li><a href="#" class="text-white hover:text-gray-300 underline-effect">Realizacje</a></li>
             <li><a href="#" class="text-white hover:text-gray-300 underline-effect">Kontakt</a></li>
             <li>
-               <button class="text-white hover:text-gray-300 focus:outline-none">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4l16 16m-2 0L4 4">
-                     </path>
-                  </svg>
+               <button id="searchButton" class="text-white hover:text-gray-300 focus:outline-none">
+                  <img src="icons/search-icon.svg" alt="">
                </button>
+               <div id="searchContainer" class="hidden ">
+                  <input type="text" class="border rounded px-2 " placeholder="Szukaj...">
+               </div>
             </li>
+
          </ul>
+         
       </nav>
 
       <div id="mobile-menu"
@@ -235,7 +245,7 @@
             </div>
          </div>
       </section>
-      <section class="projects max-w-8xl pt-28   mx-auto">
+      <section class="projects pt-28   mx-auto">
          <div class="lg:w-4/6 lg:px-24 pb-20 px-8">
             <h2 class="text-sm  mb-4">Realizacje</h2>
             <h3 class="text-xl font-semibold mb-8">Nasze projekty</h3>

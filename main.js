@@ -6,7 +6,22 @@ const popup = document.getElementById('popup')
 const popupImage = document.getElementById('popupImage')
 const expandBtn = document.getElementById('expand-btn')
 const gradient = document.getElementById('gradient')
+const searchButton = document.getElementById('searchButton');
+const searchContainer = document.getElementById('searchContainer');
 
+
+
+searchButton.addEventListener('click', () => {
+    searchContainer.style.display = 'block';
+    searchButton.style.display = 'none';
+});
+
+document.addEventListener('click', (event) => {
+   if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
+       searchContainer.style.display = 'none';
+       searchButton.style.display = 'block';
+   }
+});
 
 
 
