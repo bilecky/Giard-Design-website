@@ -28,8 +28,8 @@ mobileMenuButton.addEventListener('click', () => {
 })
 
 mobileMenuItems.forEach(item =>
-	item.addEventListener('click', e => {
-		if ((e.target = item)) {
+	item.addEventListener('click', event => {
+		if (event.target == item) {
 			mobileMenu.classList.remove('translate-x-0')
 		}
 	})

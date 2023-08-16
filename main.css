@@ -1,6 +1,5 @@
 html {
 	scroll-behavior: smooth;
-
 }
 
 body {
@@ -8,16 +7,18 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a, p, h2 {
+a,
+p,
+h2,
+button  {
 	font-family: 'inter';
 }
 .italic span {
-	font-family: 'inter'
+	font-family: 'inter';
 }
 .header-heading {
 	line-height: 1.2;
 }
-
 
 .underline-effect {
 	position: relative;
@@ -42,8 +43,6 @@ a, p, h2 {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
-
-
 
 .rounded-card {
 	border-radius: 20px;

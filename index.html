@@ -22,7 +22,7 @@
                   themeBeigeBgc: 'rgba(220, 193, 171, 1)',
                   themeGrey: 'rgba(245, 240, 236, 1)',
                   themeGreenBgc: 'rgba(27, 91, 49, 1)',
-                  themeBlackFont: 'rgba(17, 17, 17, 1) '
+                  themeBlack: 'rgba(17, 17, 17, 1) '
 
                }
             }
@@ -38,10 +38,10 @@
 
 
    <header>
-      <nav class=" py-8  flex items-center justify-between px-16 ">
+      <nav class=" py-8  flex items-center justify-between px-8  ">
          <h1 class="text-white text-2xl"><a href="#"><img src="icons/logo-icon.svg" alt="giard design logo"></a></h1>
          <div class="lg:hidden fixed right-8 z-50">
-            <button id="mobile-menu-button" class="text-themeBlackFont transition hover:text-gray-500 focus:outline-none">
+            <button id="mobile-menu-button" class="text-themeBlack transition hover:text-gray-500 focus:outline-none">
                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -68,9 +68,9 @@
                   </li>
                </ul>
             </li>
-            <li><a href="#about" class="text-themeBlackFont hover:text-gray-800 underline-effect">O Firmie</a></li>
-            <li><a href="#projects" class="text-themeBlackFont hover:text-gray-800 underline-effect">Realizacje</a></li>
-            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">Kontakt</a></li>
+            <li><a href="#about" class="text-themeBlack hover:text-gray-800 underline-effect">O Firmie</a></li>
+            <li><a href="#projects" class="text-themeBlack hover:text-gray-800 underline-effect">Realizacje</a></li>
+            <li><a href="#" class="text-themeBlack hover:text-gray-800 underline-effect">Kontakt</a></li>
             <li>
                <button id="searchButton" class="text-white hover:text-gray-300 focus:outline-none">
                   <img src="icons/search-icon.svg" alt="">
@@ -96,28 +96,28 @@
          </div>
          <div class="flex flex-col items-center justify-center h-full">
             <ul class="space-y-4 text-center mobile">
-               <li><a href="#offer"
-                     class="text-gray-800 text-xl  block px-4 py-2  mobile-menu-item">Oferta</a></li>
+               <li><a href="#offer" class="text-gray-800 text-xl  block px-4 py-2  mobile-menu-item">Oferta</a></li>
                <li><a href="#about" class="text-gray-800 text-xl  block px-4 py-2  mobile-menu-item">O
                      firmie </a></li>
-               <li><a href="#projects"
-                     class="text-gray-800  text-xl block px-4 py-2  mobile-menu-item">Realizacje</a>
+               <li><a href="#projects" class="text-gray-800  text-xl block px-4 py-2  mobile-menu-item">Realizacje</a>
                </li>
-               <li><a href="#contact"
-                     class="text-gray-800 text-xl  block px-4 py-2   mobile-menu-item">Kontakt</a></li>
+               <li><a href="#contact" class="text-gray-800 text-xl  block px-4 py-2   mobile-menu-item">Kontakt</a></li>
             </ul>
          </div>
       </div>
       <section class="heeader_hero-section md:flex mx-auto ">
-         <div class="md:w-1/2 bg-themeBeigeBgc flex flex-col justify-center items-start p-16 relative overflow-hidden">
+         <div class="md:w-1/2 bg-themeBeigeBgc flex flex-col justify-center items-start p-8 relative overflow-hidden">
             <img src="images/hero-photo.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
 
             <div class="relative ">
                <div class="lg:pr-28">
-                  <h2 class="header-heading text-4xl font-medium md:text-5xl lg:text-6xl text-primary mb-4 tracking-wide ">Nowoczesna
+                  <h2
+                     class="header-heading text-4xl font-medium md:text-5xl lg:text-6xl text-primary mb-4 tracking-wide ">
+                     Nowoczesna
                      aranżacja Twojego ogrodu</h2>
-                  <p class="tracking-wide font-medium md:text-base text-themeBlackFont mb-6 text-left mt-11 ">Marka GiardDesign to
+                  <p class="tracking-wide font-medium md:text-base text-themeBlack mb-6 text-left mt-11 ">Marka
+                     GiardDesign to
                      wieloletnie
                      doświadczenie i
                      wysoka
@@ -151,8 +151,10 @@
       <section id="offer" class=" offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
          <div class="lg:w-4/6 lg:px-24 pb-20">
             <h2 class="text-sm  mb-4 text-themeGreenBgc">Oferta</h2>
-            <h3 class="text-2xl font-semibold mb-8 text-themeBlackFont tracking-wide">Działamy <span class="italic ">kompleksowo</span></h3>
-            <p class="text-themeBlackFont">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
+            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-medium mb-8 text-themeBlack tracking-wide">Działamy <span
+               class="italic font-semibold ">kompleksowo</span></h3>
+            <p class="text-themeBlack">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+               nowoczesne
                ogrody przydomowe oraz
                rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
                posłużymy radą i wieloletnim doświadczeniem.</p>
@@ -167,7 +169,7 @@
                </div>
                <h4 class="text-2xl font-medium mb-2">
                   Projekty </h4>
-               <p class="text-themeBlackFont mb-12">
+               <p class="text-themeBlack mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -188,7 +190,7 @@
                </div>
                <h4 class="text-2xl font-medium mb-2">
                   Wizualizacje </h4>
-               <p class="text-themeBlackFont mb-12">
+               <p class="text-themeBlack mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -207,7 +209,7 @@
                </div>
                <h4 class="text-2xl font-medium mb-2">
                   Realizacje </h4>
-               <p class="text-themeBlackFont mb-12">
+               <p class="text-themeBlack mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -228,18 +230,24 @@
          <div class="hidden md:block md:w-1/2  bg-cover bg-center">
             <img src="images/about-img.png" alt="giard design hero image" class="h-full w-full object-cover">
          </div>
-         <div class="md:w-1/2 bg-themeGreenBgc flex flex-col justify-center items-start p-8 relative overflow-hidden z-20">
+         <div
+            class="md:w-1/2 bg-themeGreenBgc flex flex-col justify-center items-start p-8 relative overflow-hidden z-20">
             <img src="images/about-img.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden -z-10">
 
             <div class="lg:p-20">
                <h2 class="text-sm  mb-4 text-themeGrey">O firmie</h2>
-               <h3 class="text-2xl font-semibold mb-8 text-themeGrey">Tworzymy z pasją</h3>
-               <p class="text-themeGrey">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+               <h3 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-8 text-themeGrey tracking-wide">Tworzymy  <span
+                     class="italic font-semibold block">z pasją</span> </h3>
+               <p class="text-themeGrey">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+                  projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
+                  Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
+                  prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
 
 
-               <div class="border-2 rounded-full px-5  py-3 inline-flex items-center justify-center mt-16 text-themeGrey transition hover:scale-105">
-                  <a href="#" class="btn-secondary mr-1 text-center">Poznaj nas bliżej</a>
+               <div
+                  class="border-2 rounded-full px-5  py-3 inline-flex items-center justify-center mt-16 text-themeGrey transition hover:scale-105">
+                  <a href="#projects" class="btn-secondary mr-1 text-center">Poznaj nas bliżej</a>
                   <svg class="w-4 h-4 inline transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -251,10 +259,10 @@
          </div>
       </section>
       <section id="projects" class="projects pt-28   mx-auto bg-themeBeigeBgc">
-         <div class="lg:w-4/6 lg:px-24 pb-20 px-8">
-            <h2 class="text-sm  mb-4 text-themeGreenBgc">Realizacje</h2>
-            <h3 class="text-2xl font-semibold tracking-wide  ">Nasze <span class="italic">projekty</span></h3>
-
+         <div class="lg:w-4/6 px-8 lg:px-30 pb-20 mx-auto max-w-7xl">
+            <h2 class="text-sm  mb-4 text-themeGreenBgc">Oferta</h2>
+            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-semibold mb-8 text-themeBlack tracking-wide">Działamy <span
+               class="italic font-semibold ">kompleksowo</span></h3>
          </div>
          <div class="masonry relative gap-8 ">
             <div class="item cursor-pointer transform overflow-hidden ">
@@ -288,7 +296,8 @@
 
             <div id="gradient"
                class="gradient absolute bottom-0 left-0 w-full h-3/4 flex flex-col items-center justify-end">
-               <button id="expand-btn" class="mb-8 py-2 px-4 border border-2 text-white rounded-full">Rozwiń <svg
+               <button id="expand-btn"
+                  class="mb-8 py-2 px-4 border border-2 text-white rounded-full transition hover:scale-105">Rozwiń <svg
                      class="w-4 h-4 inline transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -306,44 +315,52 @@
       <section class="instagram-section py-16 max-w-7xl mx-auto px-8 ">
 
 
-         <div class="bg-green-500 py-28 px-4 md:px-24 md:flex text-center md:text-left">
+         <div class="bg-themeGreenBgc py-28 px-4 md:px-10 lg:px-20 md:flex justify-between text-center md:text-left">
 
-            <h4 class="md:w-3/4 mb-6 md:mb-0">Zostańmy w kontakcie! Znajdziesz nas na <span>Instagramie.</span></h4>
-            <div>
-               <span class="block mb-6 ">Śledź nasz najnowsze realizacje</span>
-               <button class=" py-2 px-4 border border-2 text-white rounded-full">Instagram</button>
+            <h3 class="md:w-3/5 lg:w-3/4 mb-6 md:mb-0 text-themeGrey text-2xl md:text-3xl lg:text-4xl  xl:text-5xl ">Zostańmy w kontakcie! Znajdziesz nas na <span
+                  class="italic font-semibold">Instagramie.</span></h3>
+            <div class="ml-4">
+               <span class="block  mb-6 text-themeGrey md:w-2/3">Śledź nasze najnowsze realizacje</span>
+               <button
+                  class=" py-2 px-4 bg-themeGrey text-themeGreenBgc rounded-full transition hover:scale-105">Instagram</button>
             </div>
          </div>
       </section>
    </main>
-   <footer id="contact" class="bg-black py-20  ">
+   <footer id="contact" class="bg-themeBlack py-20  ">
       <div class="max-w-7xl mx-auto">
          <div class="text-center mx-8 border-b pb-8 md:flex justify-between items-center">
-            <h5 class="text-white">giardDesign</h5>
+            <h5 class=" flex items-center justify-center"><a href="#"><img src="icons/logo-icon-white.svg"
+                     alt="giard design logo"></a>
+            </h5>
             <div class="md:flex">
                <span class="text-white block p-4">Daj znać, co możemy dla ciebie zrobić</span>
-               <button class="py-2 px-4 border border-2 text-white rounded-full">Skontaktuj się z nami</button>
+               <button
+                  class="py-2 px-4 bg-themeGreenBgc text-themeGrey rounded-full transition hover:scale-105">Skontaktuj
+                  się z nami</button>
             </div>
          </div>
          <div class="text-white mx-8 pt-8">
-            <div class="md:flex justify-between items-center">
-               <div class="text-center md:flex md:justify-between md:w-1/3">
-                  <a href="#">Kontakt</a>
-                  <a href="#">Instagram</a>
-                  <a href="#">Facebook</a>
-                  <a href="#">LinkedIn</a>
-               </div>
+            <div class="md:flex  md:justify-between items-center">
+               <div class="text-center flex justify-evenly lg:justify-between flex-wrap   md:w-1/3">
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Kontakt</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Instagram</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Facebook</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">LinkedIn</a>
+                </div>
+                
 
                <div class="text-center p-4 px-0 ">
-                  <span class="md:inline-block md:mr-12">000-000-000</span>
+                  <span class="md:inline-block mr-2 md:mr-12">000-000-000</span>
                   <span>giardesign@kontakt.pl</span>
                </div>
             </div>
 
             <div class="text-center md:pt-24 md:flex justify-between items-center ">
                <span>Prawa zastrzeżone © 2022</span>
-               <div>
-                  <span>made by</span>Ad Respect
+               <div class="md:flex">
+                  <span class="inline-block p-3">made by</span><img class="block mx-auto"
+                     src="icons/logo-full-light-adrespect.svg" alt="">
                </div>
             </div>
          </div>
