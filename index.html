@@ -12,6 +12,8 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
    <script src="https://cdn.tailwindcss.com"></script>
    <script>
 
@@ -38,9 +40,9 @@
 
 
    <header>
-      <nav class=" py-8  flex items-center justify-between px-8  ">
-         <h1 class="text-white text-2xl"><a href="#"><img src="icons/logo-icon.svg" alt="giard design logo"></a></h1>
-         <div class="lg:hidden fixed right-8 z-50">
+      <nav class=" py-8  flex items-center justify-between px-8 " >
+         <h1 data-aos="zoom-in" data-aos-duration="1200" class="text-white text-2xl"><a href="#"><img src="icons/logo-icon.svg" alt="giard design logo"></a></h1>
+         <div data-aos="zoom-in" data-aos-duration="1200" class="lg:hidden fixed right-8 z-50">
             <button id="mobile-menu-button" class="text-themeBlack transition hover:text-gray-500 focus:outline-none">
                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -106,17 +108,18 @@
          </div>
       </div>
       <section class="heeader_hero-section md:flex mx-auto ">
-         <div class="md:w-1/2 bg-themeBeigeBgc flex flex-col justify-center items-start p-8 relative overflow-hidden">
+         <div class="  md:w-1/2 bg-themeBeigeBgc flex flex-col justify-center items-start p-8 relative overflow-hidden">
             <img src="images/hero-photo.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
 
             <div class="relative ">
-               <div class="lg:pr-28">
-                  <h2
+               <div class="lg:pr-28 " data-aos="fade-right" data-aos-duration="1200">
+                  <h2 
                      class="header-heading text-4xl font-medium md:text-5xl lg:text-6xl text-primary mb-4 tracking-wide ">
                      Nowoczesna
                      aranżacja Twojego ogrodu</h2>
-                  <p class="tracking-wide font-medium md:text-base text-themeBlack mb-6 text-left mt-11 ">Marka
+                  <p 
+                     class="tracking-wide font-medium md:text-base text-themeBlack mb-6 text-left mt-11 ">Marka
                      GiardDesign to
                      wieloletnie
                      doświadczenie i
@@ -125,8 +128,8 @@
                      projektu.</p>
                </div>
 
-               <div class="flex flex-col lg:flex-row gap-4 mt-16">
-                  <a href="#contact"
+               <div class="flex flex-col lg:flex-row gap-4 mt-16" >
+                  <a href="#contact" 
                      class="text-themeGrey bg-themeGreenBgc  rounded-full px-5  py-3 text-center sm:w-3/5 md:w-4/5 lg:w-auto transition hover:scale-105">Skontaktuj
                      się z nami</a>
                   <div
@@ -149,10 +152,10 @@
 
    <main>
       <section id="offer" class=" offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
-         <div class="lg:w-4/6 lg:px-24 pb-20">
+         <div class="lg:w-4/6 lg:px-24 pb-20" data-aos="fade-right" data-aos-duration="1100">
             <h2 class="text-sm  mb-4 text-themeGreenBgc">Oferta</h2>
-            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-medium mb-8 text-themeBlack tracking-wide">Działamy <span
-               class="italic font-semibold ">kompleksowo</span></h3>
+            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-medium mb-8 text-themeBlack tracking-wide">
+               Działamy <span class="italic font-semibold ">kompleksowo</span></h3>
             <p class="text-themeBlack">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
                nowoczesne
                ogrody przydomowe oraz
@@ -235,10 +238,10 @@
             <img src="images/about-img.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden -z-10">
 
-            <div class="lg:p-20">
+            <div class="lg:p-20 " data-aos="fade-right" data-aos-duration="1100">
                <h2 class="text-sm  mb-4 text-themeGrey">O firmie</h2>
-               <h3 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-8 text-themeGrey tracking-wide">Tworzymy  <span
-                     class="italic font-semibold block">z pasją</span> </h3>
+               <h3 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-8 text-themeGrey tracking-wide">
+                  Tworzymy <span class="italic font-semibold block">z pasją</span> </h3>
                <p class="text-themeGrey">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
                   projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
                   Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
@@ -259,10 +262,10 @@
          </div>
       </section>
       <section id="projects" class="projects pt-28   mx-auto bg-themeBeigeBgc">
-         <div class="lg:w-4/6 px-8 lg:px-30 pb-20 mx-auto max-w-7xl">
+         <div data-aos="fade-right" data-aos-duration="1100" class="lg:w-4/6 px-8 lg:px-30 pb-20 mx-auto max-w-7xl">
             <h2 class="text-sm  mb-4 text-themeGreenBgc">Oferta</h2>
-            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-semibold mb-8 text-themeBlack tracking-wide">Działamy <span
-               class="italic font-semibold ">kompleksowo</span></h3>
+            <h3 class="text-2xl md:text-3xl lg:text-4xl  xl:text-5xl font-medium mb-8 text-themeBlack tracking-wide">
+               Działamy <span class="italic font-semibold ">kompleksowo</span></h3>
          </div>
          <div class="masonry relative gap-8 ">
             <div class="item cursor-pointer transform overflow-hidden ">
@@ -315,10 +318,10 @@
       <section class="instagram-section py-16 max-w-7xl mx-auto px-8 ">
 
 
-         <div class="bg-themeGreenBgc py-28 px-4 md:px-10 lg:px-20 md:flex justify-between text-center md:text-left">
+         <div data-aos="fade-right" data-aos-duration="1100"  class="bg-themeGreenBgc py-28 px-4 md:px-10 lg:px-20 md:flex justify-between text-center md:text-left">
 
-            <h3 class="md:w-3/5 lg:w-3/4 mb-6 md:mb-0 text-themeGrey text-2xl md:text-3xl lg:text-4xl  xl:text-5xl ">Zostańmy w kontakcie! Znajdziesz nas na <span
-                  class="italic font-semibold">Instagramie.</span></h3>
+            <h3 class="md:w-3/5 lg:w-3/4 mb-6 md:mb-0 text-themeGrey text-2xl md:text-3xl lg:text-4xl  xl:text-5xl ">
+               Zostańmy w kontakcie! Znajdziesz nas na <span class="italic font-semibold">Instagramie.</span></h3>
             <div class="ml-4">
                <span class="block  mb-6 text-themeGrey md:w-2/3">Śledź nasze najnowsze realizacje</span>
                <button
@@ -343,12 +346,16 @@
          <div class="text-white mx-8 pt-8">
             <div class="md:flex  md:justify-between items-center">
                <div class="text-center flex justify-evenly lg:justify-between flex-wrap   md:w-1/3">
-                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Kontakt</a>
-                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Instagram</a>
-                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">Facebook</a>
-                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75" href="#">LinkedIn</a>
-                </div>
-                
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75"
+                     href="#">Kontakt</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75"
+                     href="#">Instagram</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75"
+                     href="#">Facebook</a>
+                  <a class="text-themeGrey transition duration-300 hover:scale-105 hover:opacity-75"
+                     href="#">LinkedIn</a>
+               </div>
+
 
                <div class="text-center p-4 px-0 ">
                   <span class="md:inline-block mr-2 md:mr-12">000-000-000</span>
@@ -367,7 +374,9 @@
       </div>
    </footer>
 
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="main.js"></script>
+
 </body>
 
 </html>
