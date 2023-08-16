@@ -1,13 +1,18 @@
-# AdRespect Recruitment Project
+# AdRespect Recruitment Project - Giant Design website
 
  <a href="https://deviceframes.com/templates/imac-24">![adrespect-project](https://github.com/bilecky/adrespect-recruitment-task/assets/51762310/da6c78af-a131-4dc6-a0cf-f15e2db50a6a)
 </a>
+
+## Preview
+
+  [LIVE DEMO](https://bilecky.github.io/adrespect-recruitment-task/)
+
 
 ## Description
 This repository contains the code for the AdRespect recruitment project, which is a responsive website built using Vanilla JavaScript, Tailwind CSS, HTML, and the AOS library. The website follows a mobile-first approach to ensure a seamless experience across various devices.
 
 ## Project Overview
-The AdRespect recruitment project is a demonstration of a modern and responsive website. The website aims to showcase skills in web development, using a combination of popular front-end technologies.
+The AdRespect recruitment project is a demonstration of a modern and responsive website. The website aims to showcase skills in web development, using a combination of popular front-end technologies. Project was fully developed by Paweł Bilski.
 
 ## Technologies Used
 - **Vanilla JavaScript:** Core scripting language for interactivity and functionality.
@@ -18,6 +23,4 @@ The AdRespect recruitment project is a demonstration of a modern and responsive 
 
 ##  Design
 This project's design belong to  [AdRespect.pl](https://adrespect.pl)
-
-
 
