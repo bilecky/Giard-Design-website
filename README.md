@@ -12,7 +12,7 @@
 This repository contains the code for the AdRespect recruitment project, which is a responsive website built using Vanilla JavaScript, Tailwind CSS, HTML, and the AOS library. The website follows a mobile-first approach to ensure a seamless experience across various devices.
 
 ## Project Overview
-The AdRespect recruitment project is a demonstration of a modern and responsive website. The website aims to showcase skills in web development, using a combination of popular front-end technologies. Project was fully developed by Paweł Bilski.
+Project is a demonstration of a modern and responsive website. The website aims to showcase skills in web development, using a combination of popular front-end technologies. Project was fully developed by me.
 
 ## Technologies Used
 - **Vanilla JavaScript:** Core scripting language for interactivity and functionality.
