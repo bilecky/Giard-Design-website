@@ -19,7 +19,7 @@
          theme: {
             extend: {
                colors: {
-                  themeBeigeBgc: 'rgba(27, 91, 49, 1)',
+                  themeBeigeBgc: 'rgba(220, 193, 171, 1)',
                   themeGrey: 'rgba(245, 240, 236, 1)',
                   themeGreenBgc: 'rgba(27, 91, 49, 1)',
                   themeBlackFont: 'rgba(17, 17, 17, 1) '
@@ -38,10 +38,10 @@
 
 
    <header>
-      <nav class=" py-8  flex items-center justify-between px-8 max-w-7xl mx-auto">
-         <h1 class="text-white text-2xl"><img src="icons/logo-icon.svg" alt=""></h1>
+      <nav class=" py-8  flex items-center justify-between px-16 ">
+         <h1 class="text-white text-2xl"><a href="#"><img src="icons/logo-icon.svg" alt="giard design logo"></a></h1>
          <div class="lg:hidden fixed right-8 z-50">
-            <button id="mobile-menu-button" class="text-themeBlackFont hover:text-gray-300 focus:outline-none">
+            <button id="mobile-menu-button" class="text-themeBlackFont transition hover:text-gray-500 focus:outline-none">
                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -60,16 +60,16 @@
                </a>
                <ul
                   class="absolute left-0  mt-2 bg-white border border-gray-300 w-40 py-2 transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-top">
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Projekty</a>
+                  <li><a href="#offer" class="transition hover:bg-gray-200 block px-4 py-2 ">Projekty</a>
                   </li>
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Wizualizacje</a>
+                  <li><a href="#offer" class="transition hover:bg-gray-200 block px-4 py-2 ">Wizualizacje</a>
                   </li>
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Realizacje</a>
+                  <li><a href="#offer" class="transition hover:bg-gray-200 block px-4 py-2 ">Realizacje</a>
                   </li>
                </ul>
             </li>
-            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">O Firmie</a></li>
-            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">Realizacje</a></li>
+            <li><a href="#about" class="text-themeBlackFont hover:text-gray-800 underline-effect">O Firmie</a></li>
+            <li><a href="#projects" class="text-themeBlackFont hover:text-gray-800 underline-effect">Realizacje</a></li>
             <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">Kontakt</a></li>
             <li>
                <button id="searchButton" class="text-white hover:text-gray-300 focus:outline-none">
@@ -81,12 +81,11 @@
             </li>
 
          </ul>
-         
+
       </nav>
 
       <div id="mobile-menu"
-         class="lg:hidden -translate-x-full bg-white border border-gray-300 w-full h-screen fixed top-0 right-0 z-50 transform transition-transform duration-300 ease-in-out"
-         >
+         class="lg:hidden -translate-x-full bg-themeGrey border border-gray-300 w-full h-screen fixed top-0 right-0 z-50 transform transition-transform duration-300 ease-in-out">
          <div class="absolute top-0 right-0 px-8 pt-8">
             <button class=" close-button text-gray-600 hover:text-gray-800 focus:outline-none">
                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -97,22 +96,29 @@
          </div>
          <div class="flex flex-col items-center justify-center h-full">
             <ul class="space-y-4 text-center mobile">
-               <li><a href="#offer" class="text-gray-800 text-xl  block px-4 py-2 underline-effect mobile-menu-item">Oferta</a></li>
-               <li><a href="#about" class="text-gray-800 text-xl  block px-4 py-2 underline-effect mobile-menu-item">O firmie </a></li>
-               <li><a href="#projects" class="text-gray-800  text-xl block px-4 py-2 underline-effect mobile-menu-item">Realizacje</a></li>
-               <li><a href="#contact" class="text-gray-800 text-xl  block px-4 py-2 underline-effect  mobile-menu-item">Kontakt</a></li>
+               <li><a href="#offer"
+                     class="text-gray-800 text-xl  block px-4 py-2  mobile-menu-item">Oferta</a></li>
+               <li><a href="#about" class="text-gray-800 text-xl  block px-4 py-2  mobile-menu-item">O
+                     firmie </a></li>
+               <li><a href="#projects"
+                     class="text-gray-800  text-xl block px-4 py-2  mobile-menu-item">Realizacje</a>
+               </li>
+               <li><a href="#contact"
+                     class="text-gray-800 text-xl  block px-4 py-2   mobile-menu-item">Kontakt</a></li>
             </ul>
          </div>
       </div>
       <section class="heeader_hero-section md:flex mx-auto ">
-         <div class="md:w-1/2 bg-yellow-600 flex flex-col justify-center items-start p-8 relative overflow-hidden">
+         <div class="md:w-1/2 bg-themeBeigeBgc flex flex-col justify-center items-start p-16 relative overflow-hidden">
             <img src="images/hero-photo.png" alt="giard design hero image"
                class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
 
-            <div class="relative">
-               <div class="lg:pr-32">
-                  <h3 class="md:text-6xl text-primary mb-4 tracking-wide ">Nowoczesna aranżacja Twojego ogrodu</h3>
-                  <p class="md:text-base text-primary mb-6 text-left mt-11 ">Marka GiardDesign to wieloletnie
+            <div class="relative ">
+               <div class="lg:pr-28">
+                  <h2 class="header-heading text-4xl font-medium md:text-5xl lg:text-6xl text-primary mb-4 tracking-wide ">Nowoczesna
+                     aranżacja Twojego ogrodu</h2>
+                  <p class="tracking-wide font-medium md:text-base text-themeBlackFont mb-6 text-left mt-11 ">Marka GiardDesign to
+                     wieloletnie
                      doświadczenie i
                      wysoka
                      estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego
@@ -120,11 +126,13 @@
                </div>
 
                <div class="flex flex-col lg:flex-row gap-4 mt-16">
-                  <a href="#" class="bg-blue-500 rounded-full px-5  py-3 text-center md:w-2/3 lg:w-auto">Skontaktuj
+                  <a href="#contact"
+                     class="text-themeGrey bg-themeGreenBgc  rounded-full px-5  py-3 text-center sm:w-3/5 md:w-4/5 lg:w-auto transition hover:scale-105">Skontaktuj
                      się z nami</a>
-                  <div class="border-2 rounded-full px-5  py-3 flex items-center justify-center md:w-2/3 lg:w-auto">
-                     <a href="#" class="btn-secondary mr-1 text-center">Zobacz nasze realizacje</a>
-                     <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  <div
+                     class="bg-themeBeigeBgc/50  border-2 border-themeGreenBgc text-themeGreenBgc rounded-full px-5  py-3 flex items-center justify-center sm:w-3/5 md:w-4/5 lg:w-auto transition hover:scale-105">
+                     <a href="#projects" class=" text-center">Zobacz nasze realizacje</a>
+                     <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -140,11 +148,11 @@
    </header>
 
    <main>
-      <section id="offer" class="offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
+      <section id="offer" class=" offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
          <div class="lg:w-4/6 lg:px-24 pb-20">
-            <h2 class="text-sm  mb-4">Oferta</h2>
-            <h3 class="text-xl font-semibold mb-8">Działamy kompleksowo</h3>
-            <p class="text-gray-700">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
+            <h2 class="text-sm  mb-4 text-themeGreenBgc">Oferta</h2>
+            <h3 class="text-2xl font-semibold mb-8 text-themeBlackFont tracking-wide">Działamy <span class="italic ">kompleksowo</span></h3>
+            <p class="text-themeBlackFont">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
                ogrody przydomowe oraz
                rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
                posłużymy radą i wieloletnim doświadczeniem.</p>
@@ -157,9 +165,9 @@
                <div class="flex items-center mb-8">
                   <img src="icons/projects-icon.png" alt="" class="w-11 h-8">
                </div>
-               <h2 class="text-lg font-semibold mb-2">
-                  Projekty </h2>
-               <p class="text-gray-600 mb-12">
+               <h4 class="text-2xl font-medium mb-2">
+                  Projekty </h4>
+               <p class="text-themeBlackFont mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -178,9 +186,9 @@
                <div class="flex items-center mb-8">
                   <img src="icons/visualisations-icon.png" alt="" class="w-11 h-8">
                </div>
-               <h2 class="text-lg font-semibold mb-2">
-                  Wizualizacje </h2>
-               <p class="text-gray-600 mb-12">
+               <h4 class="text-2xl font-medium mb-2">
+                  Wizualizacje </h4>
+               <p class="text-themeBlackFont mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -197,9 +205,9 @@
                <div class="flex items-center mb-8">
                   <img src="icons/realizations-icon.png" alt="" class="w-11 h-8">
                </div>
-               <h2 class="text-lg font-semibold mb-2">
-                  Realizacje </h2>
-               <p class="text-gray-600 mb-12">
+               <h4 class="text-2xl font-medium mb-2">
+                  Realizacje </h4>
+               <p class="text-themeBlackFont mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
                <div class="border-b border-green-600 inline text-green-600 transition hover:text-green-900">
@@ -217,24 +225,20 @@
       </section>
       <section id="about" class="about-section  md:flex mx-auto max-h-[700px]">
 
-         <div class="hidden md:block md:w-1/2 bg-hero-image bg-cover bg-center">
+         <div class="hidden md:block md:w-1/2  bg-cover bg-center">
             <img src="images/about-img.png" alt="giard design hero image" class="h-full w-full object-cover">
          </div>
-         <div class="md:w-1/2 bg-yellow-600 flex flex-col justify-center items-start p-8 relative overflow-hidden">
+         <div class="md:w-1/2 bg-themeGreenBgc flex flex-col justify-center items-start p-8 relative overflow-hidden z-20">
             <img src="images/about-img.png" alt="giard design hero image"
-               class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden">
+               class="h-full w-full object-cover absolute top-0 left-0 opacity-20 md:hidden -z-10">
 
             <div class="lg:p-20">
-               <h2 class="text-sm  mb-4">O firmie</h2>
-               <h3 class="text-5xl font-semibold mb-8">Działamy kompleksowo</h3>
-               <p class="">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne
-                  ogrody przydomowe oraz
-                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
-                  etapie
-                  posłużymy radą i wieloletnim doświadczeniem.</p>
+               <h2 class="text-sm  mb-4 text-themeGrey">O firmie</h2>
+               <h3 class="text-2xl font-semibold mb-8 text-themeGrey">Tworzymy z pasją</h3>
+               <p class="text-themeGrey">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
 
 
-               <div class="border-2 rounded-full px-5  py-3 inline-flex items-center justify-center mt-16">
+               <div class="border-2 rounded-full px-5  py-3 inline-flex items-center justify-center mt-16 text-themeGrey transition hover:scale-105">
                   <a href="#" class="btn-secondary mr-1 text-center">Poznaj nas bliżej</a>
                   <svg class="w-4 h-4 inline transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
@@ -246,10 +250,10 @@
             </div>
          </div>
       </section>
-      <section id="projects" class="projects pt-28   mx-auto">
+      <section id="projects" class="projects pt-28   mx-auto bg-themeBeigeBgc">
          <div class="lg:w-4/6 lg:px-24 pb-20 px-8">
-            <h2 class="text-sm  mb-4">Realizacje</h2>
-            <h3 class="text-xl font-semibold mb-8">Nasze projekty</h3>
+            <h2 class="text-sm  mb-4 text-themeGreenBgc">Realizacje</h2>
+            <h3 class="text-2xl font-semibold tracking-wide  ">Nasze <span class="italic">projekty</span></h3>
 
          </div>
          <div class="masonry relative gap-8 ">

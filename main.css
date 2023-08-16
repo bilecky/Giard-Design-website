@@ -1,7 +1,21 @@
+html {
+	scroll-behavior: smooth;
+
+}
+
 body {
 	background-color: rgba(245, 240, 236, 1);
 	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+}
+
+a, p, h2 {
+	font-family: 'inter';
+}
+.italic span {
+	font-family: 'inter'
+}
+.header-heading {
+	line-height: 1.2;
 }
 
 
