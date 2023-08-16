@@ -1,3 +1,10 @@
+body {
+	background-color: rgba(245, 240, 236, 1);
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+
 .underline-effect {
 	position: relative;
 	display: inline-block;
@@ -11,7 +18,7 @@
 	height: 1px;
 	bottom: -2px;
 	left: 0;
-	background-color: white;
+	background-color: rgba(17, 17, 17, 1);
 	transform: scaleX(0);
 	transform-origin: bottom right;
 	transition: transform 0.3s ease-in-out;
@@ -22,11 +29,7 @@
 	transform-origin: bottom left;
 }
 
-body {
-	background-color: rgba(245, 240, 236, 1);
-	font-family: 'Montserrat', sans-serif;
 
-}
 
 .rounded-card {
 	border-radius: 20px;
@@ -59,8 +62,7 @@ body {
 	display: inline-block;
 	margin: 0 0 2em;
 	max-width: 100%;
-  background-size: cover;
-
+	background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -82,17 +84,15 @@ body {
 
 @keyframes slide-up {
 	0% {
-		 transform: translateY(20px);
-		 opacity: 0;
+		transform: translateY(20px);
+		opacity: 0;
 	}
 	100% {
-		 transform: translateY(0);
-		 opacity: 1;
+		transform: translateY(0);
+		opacity: 1;
 	}
 }
 
 #searchContainer {
 	animation: slide-up 0.3s ease-in-out;
 }
-
-

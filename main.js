@@ -6,28 +6,34 @@ const popup = document.getElementById('popup')
 const popupImage = document.getElementById('popupImage')
 const expandBtn = document.getElementById('expand-btn')
 const gradient = document.getElementById('gradient')
-const searchButton = document.getElementById('searchButton');
-const searchContainer = document.getElementById('searchContainer');
+const searchButton = document.getElementById('searchButton')
+const searchContainer = document.getElementById('searchContainer')
+const mobileMenuItems = document.querySelectorAll('.mobile-menu-item')
 
-
-
+console.log(mobileMenuItems)
 searchButton.addEventListener('click', () => {
-    searchContainer.style.display = 'block';
-    searchButton.style.display = 'none';
-});
+	searchContainer.style.display = 'block'
+	searchButton.style.display = 'none'
+})
 
-document.addEventListener('click', (event) => {
-   if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
-       searchContainer.style.display = 'none';
-       searchButton.style.display = 'block';
-   }
-});
-
-
+document.addEventListener('click', event => {
+	if (!searchContainer.contains(event.target) && !searchButton.contains(event.target)) {
+		searchContainer.style.display = 'none'
+		searchButton.style.display = 'block'
+	}
+})
 
 mobileMenuButton.addEventListener('click', () => {
 	mobileMenu.classList.add('translate-x-0')
 })
+
+mobileMenuItems.forEach(item =>
+	item.addEventListener('click', e => {
+		if ((e.target = item)) {
+			mobileMenu.classList.remove('translate-x-0')
+		}
+	})
+)
 
 closeButton.addEventListener('click', () => {
 	mobileMenu.classList.add('-translate-x-full')

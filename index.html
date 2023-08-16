@@ -38,18 +38,18 @@
 
 
    <header>
-      <nav class=" p-4 flex items-center justify-between px-8 max-w-7xl mx-auto">
+      <nav class=" py-8  flex items-center justify-between px-8 max-w-7xl mx-auto">
          <h1 class="text-white text-2xl"><img src="icons/logo-icon.svg" alt=""></h1>
-         <div class="lg:hidden">
-            <button id="mobile-menu-button" class="text-white hover:text-gray-300 focus:outline-none">
-               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+         <div class="lg:hidden fixed right-8 z-50">
+            <button id="mobile-menu-button" class="text-themeBlackFont hover:text-gray-300 focus:outline-none">
+               <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
                   </path>
                </svg>
             </button>
          </div>
-         <ul class="hidden lg:flex space-x-4">
+         <ul class="hidden lg:flex space-x-4 ">
             <li class="relative group">
                <a href="#" class=" hover:text-gray-900 underline-effect flex items-center">
                   Oferta
@@ -60,17 +60,17 @@
                </a>
                <ul
                   class="absolute left-0  mt-2 bg-white border border-gray-300 w-40 py-2 transform scale-0 group-hover:scale-100 transition-transform duration-300 origin-top">
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 1</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Projekty</a>
                   </li>
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 2</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Wizualizacje</a>
                   </li>
-                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 3</a>
+                  <li><a href="#" class="transition hover:bg-gray-200 block px-4 py-2 ">Realizacje</a>
                   </li>
                </ul>
             </li>
-            <li><a href="#" class="text-white hover:text-gray-300 underline-effect">O Firmie</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300 underline-effect">Realizacje</a></li>
-            <li><a href="#" class="text-white hover:text-gray-300 underline-effect">Kontakt</a></li>
+            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">O Firmie</a></li>
+            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">Realizacje</a></li>
+            <li><a href="#" class="text-themeBlackFont hover:text-gray-800 underline-effect">Kontakt</a></li>
             <li>
                <button id="searchButton" class="text-white hover:text-gray-300 focus:outline-none">
                   <img src="icons/search-icon.svg" alt="">
@@ -86,20 +86,21 @@
 
       <div id="mobile-menu"
          class="lg:hidden -translate-x-full bg-white border border-gray-300 w-full h-screen fixed top-0 right-0 z-50 transform transition-transform duration-300 ease-in-out"
-         id="mobile-menu">
-         <div class="flex justify-end px-4 pt-4">
-            <button class="close-button text-gray-600 hover:text-gray-800 focus:outline-none">
-               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+         >
+         <div class="absolute top-0 right-0 px-8 pt-8">
+            <button class=" close-button text-gray-600 hover:text-gray-800 focus:outline-none">
+               <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                </svg>
             </button>
          </div>
          <div class="flex flex-col items-center justify-center h-full">
-            <ul class="space-y-4">
-               <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Oferta</a></li>
-               <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 2</a></li>
-               <li><a href="#" class="text-gray-800 hover:bg-gray-200 block px-4 py-2 underline-effect">Opcja 3</a></li>
+            <ul class="space-y-4 text-center mobile">
+               <li><a href="#offer" class="text-gray-800 text-xl  block px-4 py-2 underline-effect mobile-menu-item">Oferta</a></li>
+               <li><a href="#about" class="text-gray-800 text-xl  block px-4 py-2 underline-effect mobile-menu-item">O firmie </a></li>
+               <li><a href="#projects" class="text-gray-800  text-xl block px-4 py-2 underline-effect mobile-menu-item">Realizacje</a></li>
+               <li><a href="#contact" class="text-gray-800 text-xl  block px-4 py-2 underline-effect  mobile-menu-item">Kontakt</a></li>
             </ul>
          </div>
       </div>
@@ -139,7 +140,7 @@
    </header>
 
    <main>
-      <section class="offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
+      <section id="offer" class="offer-section max-w-7xl pt-28 pb-40   mx-auto px-8">
          <div class="lg:w-4/6 lg:px-24 pb-20">
             <h2 class="text-sm  mb-4">Oferta</h2>
             <h3 class="text-xl font-semibold mb-8">Działamy kompleksowo</h3>
@@ -178,7 +179,7 @@
                   <img src="icons/visualisations-icon.png" alt="" class="w-11 h-8">
                </div>
                <h2 class="text-lg font-semibold mb-2">
-                  Projekty </h2>
+                  Wizualizacje </h2>
                <p class="text-gray-600 mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
@@ -197,7 +198,7 @@
                   <img src="icons/realizations-icon.png" alt="" class="w-11 h-8">
                </div>
                <h2 class="text-lg font-semibold mb-2">
-                  Projekty </h2>
+                  Realizacje </h2>
                <p class="text-gray-600 mb-12">
                   Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                   przestrzeni. </p>
@@ -214,7 +215,7 @@
 
 
       </section>
-      <section class="about-section  md:flex mx-auto max-h-[700px]">
+      <section id="about" class="about-section  md:flex mx-auto max-h-[700px]">
 
          <div class="hidden md:block md:w-1/2 bg-hero-image bg-cover bg-center">
             <img src="images/about-img.png" alt="giard design hero image" class="h-full w-full object-cover">
@@ -245,7 +246,7 @@
             </div>
          </div>
       </section>
-      <section class="projects pt-28   mx-auto">
+      <section id="projects" class="projects pt-28   mx-auto">
          <div class="lg:w-4/6 lg:px-24 pb-20 px-8">
             <h2 class="text-sm  mb-4">Realizacje</h2>
             <h3 class="text-xl font-semibold mb-8">Nasze projekty</h3>
@@ -311,7 +312,7 @@
          </div>
       </section>
    </main>
-   <footer class="bg-black py-20  ">
+   <footer id="contact" class="bg-black py-20  ">
       <div class="max-w-7xl mx-auto">
          <div class="text-center mx-8 border-b pb-8 md:flex justify-between items-center">
             <h5 class="text-white">giardDesign</h5>
