@@ -54,10 +54,11 @@ body {
 }
 
 .item {
-	background-color: #eee;
 	display: inline-block;
 	margin: 0 0 2em;
-	width: 100%;
+	max-width: 100%;
+  background-size: cover;
+
 }
 
 @media (min-width: 768px) {
@@ -66,6 +67,11 @@ body {
 	}
 }
 
+@media (min-width: 1450px) {
+	.masonry {
+		column-count: 4;
+	}
+}
 /* ___________ */
 
 .gradient {
