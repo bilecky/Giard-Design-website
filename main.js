@@ -10,7 +10,6 @@ const searchButton = document.getElementById('searchButton')
 const searchContainer = document.getElementById('searchContainer')
 const mobileMenuItems = document.querySelectorAll('.mobile-menu-item')
 
-console.log(mobileMenuItems)
 searchButton.addEventListener('click', () => {
 	searchContainer.style.display = 'block'
 	searchButton.style.display = 'none'
