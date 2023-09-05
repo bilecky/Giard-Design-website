@@ -1,4 +1,4 @@
-# AdRespect Recruitment Project - Giard Design website
+# Giard Design website
 
  <a href="https://deviceframes.com/templates/imac-24">![adrespect-project](https://github.com/bilecky/adrespect-recruitment-task/assets/51762310/da6c78af-a131-4dc6-a0cf-f15e2db50a6a)
 </a>
