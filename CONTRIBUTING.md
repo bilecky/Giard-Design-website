@@ -1,12 +1,6 @@
 # Contributing
 
-Thanks for your interest! This is a personal/portfolio project built as a static site. While external contributions aren’t expected, suggestions and small improvements are welcome.
-
-## Local development
-- No build step. Open `index.html` directly in your browser, or serve the folder locally for best results.
-- Suggested:
-  - Python: `python3 -m http.server 5173`
-  - Node: `npx serve -l 5173 .`
+Thanks for your interest! This is a training project built as a static site. While external contributions aren’t expected, suggestions and small improvements are welcome.
 
 ## Code style
 - HTML: semantic where possible

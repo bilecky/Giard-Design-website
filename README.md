@@ -1,4 +1,4 @@
-# Giard Design — Responsive Portfolio Landing Page
+# Giard Design — Responsive Landing Page (Training Project)
 
 A modern, responsive single‑page website built with semantic HTML, Tailwind CSS (via CDN), vanilla JavaScript, and AOS (Animate On Scroll). The site showcases a clean design, mobile‑first layout, animated sections, a masonry gallery with image lightbox, and a slide‑in mobile navigation.
 
@@ -23,25 +23,6 @@ This project is static and can be hosted anywhere that serves static files.
 - Tailwind CSS (CDN, inline config in `index.html`)
 - Vanilla JavaScript
 - AOS (CDN)
-
-## Quick start (local)
-No build tools required. You can simply open `index.html` in a browser, or serve it with a static server for best results.
-
-Using Python (built‑in on most systems):
-
-```bash
-cd /path/to/project
-python3 -m http.server 5173
-# Open http://localhost:5173 in your browser
-```
-
-Using Node.js (npx):
-
-```bash
-cd /path/to/project
-npx serve -l 5173 .
-# Open http://localhost:5173 in your browser
-```
 
 ## Project structure
 ```text
